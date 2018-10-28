@@ -1,6 +1,7 @@
-body{
+body {
     margin: 0;
 }
+
 header {
     padding: 24px 16px;
     position: fixed;
@@ -9,11 +10,15 @@ header {
     right: 0;
     /*width: 100%;*/
     /*box-sizing: border-box;*/
+    z-index: 10;
 }
 
 section {
     padding: 96px 0;
+    margin: 0 auto;
+    text-align: center;
 }
+
 header + * {
     margin-top: 80px;
 }
@@ -29,39 +34,167 @@ footer {
 .bg-secondary {
     background-color: #6c757d;
 }
+
+.conteiner {
+    text-align: center;
+    font-size: 0;
+}
+
+.conteiner hr {
+    font-size: 16px;
+}
+
 .logo, nav {
     display: inline-block;
 }
+
 .logo > a {
     font-size: 32px;
 }
-.nav-link {
+
+.nav-link, .big-white {
     color: white;
-    font-family: "Arial";
+    font-family: Arial, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-
 }
-nav{
+
+.headline h1 {
+    font-size: 4.75em;
+    line-height: 24px;
+}
+
+.headline h2 {
+    font-size: 1.75em;
+    text-transform: none;
+    margin: 0;
+}
+
+nav {
     float: right;
 }
-header::after{
+
+header::after {
     content: "";
     display: table;
     clear: both;
 }
+
 .main-nav {
     padding: 0;
     list-style: none;
-
 }
-.main-nav >li {
+
+.main-nav > li {
     display: inline-block;
     margin: 0 10px;
     /*padding: 10px 0 8px;*/
 }
+
 .main-nav .nav-link:hover,
 .main-nav .nav-link:focus {
     color: #18bc9c;
 }
+
+.portfolio-item {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    max-width: 350px;
+    padding: 0 15px;
+    margin: 15px 0;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.pi-overlay {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+    background-color: #18bc9c;
+    opacity: 0;
+
+}
+
+.portfolio-item:hover .pi-overlay,
+.portfolio-item:focus .pi-overlay {
+    opacity: .65;
+}
+
+.pi-overlay > .fa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    font-size: 72px;
+    margin: auto;
+    color: white;
+}
+
+hr{
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.star {
+    max-width: 15rem;
+    padding: 0;
+    border: none;
+    border-top: .25rem solid white;
+    margin: 2.5rem auto;
+}
+
+.dark {
+    border-top: .25rem solid #2c3e50;
+}
+
+.star:after {
+    position: relative;
+    top: -.8em;
+    display: inline-block;
+    padding: 0 .25em;
+    content: '\f005';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    min-width: 35px;
+}
+
+.light:after {
+    color: #fff;
+    background-color: #18bc9c;
+}
+
+
+.dark:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+#about h2, #portfolio h2 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin: 0;
+
+}
+
+#portfolio h2 {
+    color: #2c3e50;
+}
+
+
+
+
+
+
+
