@@ -120,7 +120,6 @@ header::after {
     left: 15px;
     background-color: #18bc9c;
     opacity: 0;
-
 }
 
 .portfolio-item:hover .pi-overlay,
@@ -141,7 +140,7 @@ header::after {
     color: white;
 }
 
-hr{
+hr {
     box-sizing: content-box;
     height: 0;
     overflow: visible;
@@ -176,7 +175,6 @@ hr{
     background-color: #18bc9c;
 }
 
-
 .dark:after {
     color: #2c3e50;
     background-color: #fff;
@@ -186,7 +184,6 @@ hr{
     font-size: 3rem;
     line-height: 2.5rem;
     margin: 0;
-
 }
 
 #portfolio h2 {
@@ -211,10 +208,9 @@ hr{
     font-family: Arial, sans-serif;
     font-size: 1.25rem;
     line-height: 1.5;
-
 }
 
-#about a{
+#about a {
     text-transform: none;
     font-weight: normal;
     padding: 16px 28px;
@@ -224,6 +220,7 @@ hr{
     border: 2px solid white;
 
 }
+
 .bt-download {
     margin: 24px 0 0;
 }
@@ -232,7 +229,7 @@ hr{
     content: "\f019";
 }
 
-#about a:hover{
+#about a:hover {
     color: #212529;
     background-color: #f8f9fa;
     border-color: #f8f9fa;
@@ -246,11 +243,13 @@ footer div {
     box-sizing: border-box;
     color: white;
 }
+
 h4 {
     margin: 0 0 24px;
     font-size: 1.5rem;
     line-height: 1.2;
 }
+
 .green-link {
     color: #18bc9c;
     text-decoration: none;
@@ -265,7 +264,6 @@ h4 {
     list-style: none;
     padding: 0;
     margin: 0;
-
 }
 
 .soc-item {
@@ -275,13 +273,11 @@ h4 {
     padding: 6px 9px;
     border-radius: 50%;
 }
-.copyright{
+
+.copyright {
     background-color: #1a252f;
     padding: 24px 0;
     width: 100%;
-   margin-bottom: ;
-
-
 }
 
 
